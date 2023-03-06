@@ -3,7 +3,7 @@ import java.util.HashMap;
 public class SizeCalculator {
 
     private static final char[] sizeMultipliers = {'B', 'K', 'M', 'G', 'T'};
-    private static final HashMap<Character, Integer> char2multiplier = new HashMap<>();
+    private static final Map<Character, Integer> char2multiplier = new HashMap<>();
 
     public static String getHumanReadableSize(long size) {
         for (int i = 0; i < sizeMultipliers.length; i++) {
